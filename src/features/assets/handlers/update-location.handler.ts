@@ -16,4 +16,9 @@ export class UpdateAssetLocationHandler {
 
     return assetInfo;
   }
+
+  private onLocationUpdated() {
+    // find clients within 100m of the asset and send a notification to them
+    // notify clients of the change in location (proximity)
+  }
 }

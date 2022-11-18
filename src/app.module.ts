@@ -5,6 +5,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { SharedModule } from './features/shared/shared.module';
 import { AssetsModule } from './features/assets/assets.module';
 import { ClientsModule } from './features/clients/clients.module';
+import { ScheduleModule } from '@nestjs/schedule';
 
 @Module({
   imports: [
@@ -14,6 +15,7 @@ import { ClientsModule } from './features/clients/clients.module';
     SharedModule,
     AssetsModule,
     ClientsModule,
+    ScheduleModule.forRoot(),
   ],
   controllers: [AppController],
   providers: [AppService],
